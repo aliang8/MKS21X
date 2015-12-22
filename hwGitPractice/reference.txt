@@ -1,0 +1,17 @@
+git init- sets up all the tools Git needs to begin tracking changes made to the project
+git status- check the status of changes 
+git add filename- add a file to the staging area
+git diff filename- check the differences between working directory and staging area
+press q to exit diff mode
+git commit- permanently stores changes from staging area inside repository
+followed by "-m" and a message
+git log to view earlier versions of project
+git show HEAD- shows most recent made commit
+git checkout HEAD filename- restore the file to look exactly as it did when you last made a commit
+git reset HEAD filename- unstage that file from the staging area
+git reset SHA- uses first 7 characters of SHA 
+
+
+
+
+
