@@ -1,6 +1,6 @@
 public class Sorts {
-
-   public static void insertionSort(int[] data){
+    
+    public static void insertionSort(int[] data){
 	int value = 0;
 	int index = 0;
 	for(int i = 1; i < data.length; i++){
@@ -13,8 +13,8 @@ public class Sorts {
 	    data[index]= value;
 	}
     }
-
-
+    
+    
     public static void selectionSort(int[] data) {
 	int start = 0;
 	int index = 0;
@@ -37,15 +37,16 @@ public class Sorts {
 	for (int i = 0; i < data.length; i++) {
 	    if (i == data.length-1) {
 		out += data[i];
-	    }else {
+	    }
+	    else {
 		out += data[i] + ",";
 	    }
 	}
 	out += "]";
 	System.out.println(out);
     }
-
-
+    
+    
     public static void main(String[] args) {
 	int[] test1 = {10,8,5,6,7,12};
 	insertionSort(test1);
@@ -54,7 +55,7 @@ public class Sorts {
 	int[] test2 = {1,24,5,654,52};
 	selectionSort(test2);
 	printArray(test2); 
-
+	
 	int[] test3 = {12};
 	selectionSort(test3);
 	printArray(test3);
