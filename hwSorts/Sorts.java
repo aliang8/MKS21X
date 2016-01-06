@@ -13,7 +13,7 @@ public class Sorts {
 		index-=1;
 	    }
 	    data[index]= value;
-	    printArray(data);
+	    //printArray(data);
 	}
     }
 
@@ -32,7 +32,7 @@ public class Sorts {
 	    data[index] = data[start];
 	    data[start] = smallest;
 	    start++;
-	    printArray(data);
+	    //printArray(data);
 	}
     }
 
@@ -48,7 +48,7 @@ public class Sorts {
 		}
 	    }
 	    counter--; 
-	    printArray(data);
+	    //printArray(data);
 	}
     }
 
@@ -69,7 +69,18 @@ public class Sorts {
 	*/
     }
 
+    public static void fillRandom(int[] data){
+	for (int i = 0; i< data.length; i++){
+	    data[i] = (int)(Math.random() * 1000);
+	}
+    }
 
+    public static void swap(int[] data, int index, int index2){
+	int temp = data[index];
+        data[index] = data[index2];
+	data[index2] = temp;
+    }
+    
     public static void main(String[]args) {
 	int[] test1 = {10,8,5,6,7,12};
 	System.out.println("Insertion Sort Test");
